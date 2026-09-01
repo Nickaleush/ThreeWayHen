@@ -1,0 +1,205 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="threeway.henroute.orchard.feature.splash.SplashFragment"
+        android:label="Splash">
+        <action
+            android:id="@+id/action_splashFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingGreyFragment"
+            app:destination="@id/onBoardingGreyFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_noInternetGreyFragment"
+            app:destination="@id/noInternetGreyFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onBoardingGreyFragment"
+        android:name="threeway.henroute.orchard.feature.startup.OnBoardingGreyFragment"
+        android:label="Notification permission">
+        <action
+            android:id="@+id/action_onBoardingGreyFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/onBoardingGreyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onBoardingGreyFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/onBoardingGreyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onBoardingGreyFragment_to_noInternetGreyFragment"
+            app:destination="@id/noInternetGreyFragment"
+            app:popUpTo="@id/onBoardingGreyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noInternetGreyFragment"
+        android:name="threeway.henroute.orchard.feature.startup.NoInternetGreyFragment"
+        android:label="No internet">
+        <action
+            android:id="@+id/action_noInternetGreyFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/noInternetGreyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_noInternetGreyFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/noInternetGreyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_noInternetGreyFragment_to_onBoardingGreyFragment"
+            app:destination="@id/onBoardingGreyFragment"
+            app:popUpTo="@id/noInternetGreyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="threeway.henroute.orchard.feature.onboarding.OnboardingFragment"
+        android:label="Onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="threeway.henroute.orchard.feature.menu.MenuFragment"
+        android:label="Menu">
+        <action
+            android:id="@+id/action_menuFragment_to_levelsFragment"
+            app:destination="@id/levelsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_leadersFragment"
+            app:destination="@id/leadersFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/levelsFragment"
+        android:name="threeway.henroute.orchard.feature.levels.LevelsFragment"
+        android:label="Levels">
+        <action
+            android:id="@+id/action_levelsFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="threeway.henroute.orchard.feature.shop.ShopFragment"
+        android:label="Shop" />
+
+    <fragment
+        android:id="@+id/leadersFragment"
+        android:name="threeway.henroute.orchard.feature.leaders.LeadersFragment"
+        android:label="Ranking" />
+
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="threeway.henroute.orchard.feature.achievements.AchievementsFragment"
+        android:label="Achievements" />
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="threeway.henroute.orchard.feature.game.GameFragment"
+        android:label="Game">
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="threeway.henroute.orchard.feature.result.ResultFragment"
+        android:label="Result">
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="distance"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="feathersCollected"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="coinsCollected"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="livesRemaining"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="bestStreak"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="skinId"
+            app:argType="string"
+            android:defaultValue="hen_classic" />
+        <argument
+            android:name="passed"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="rewardCoins"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_resultFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_resultFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="threeway.henroute.orchard.feature.settings.SettingsFragment"
+        android:label="Settings" />
+</navigation>

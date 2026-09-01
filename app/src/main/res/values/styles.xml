@@ -1,0 +1,31 @@
+<resources>
+    <style name="HenTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/inter_18pt_black</item>
+        <item name="fontFamily">@font/inter_18pt_black</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">@color/hen_brown</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="HenButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/inter_18pt_black</item>
+        <item name="fontFamily">@font/inter_18pt_black</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/default_button_bg</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="HenButton.Primary" parent="HenButton">
+        <item name="android:textColor">@color/hen_brown</item>
+    </style>
+</resources>

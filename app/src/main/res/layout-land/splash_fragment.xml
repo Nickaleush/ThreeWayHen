@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/splash_image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_horizontal_bg" />
+
+    <FrameLayout
+        android:layout_width="420dp"
+        android:layout_height="14dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_progress_track">
+
+        <View
+            android:id="@+id/progressBarFillView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_progress_fill"
+            android:pivotX="0" />
+    </FrameLayout>
+</FrameLayout>

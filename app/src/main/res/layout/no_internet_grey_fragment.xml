@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grey_blur_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="28dp"
+        android:background="@drawable/alert_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="26dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="26dp"
+        android:paddingBottom="28dp">
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/transparent"
+            android:text="@string/no_internet_title"
+            android:textColor="@color/hen_brown"
+            android:textSize="24sp" />
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:shadowColor="@color/transparent"
+            android:text="@string/no_internet_message"
+            android:textColor="#6D3A24"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/retryButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:contentDescription="@string/no_internet_retry"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/restart_button" />
+    </LinearLayout>
+</FrameLayout>

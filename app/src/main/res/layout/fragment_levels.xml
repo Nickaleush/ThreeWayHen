@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:contentDescription="@string/action_back"
+            android:src="@drawable/back_button" />
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            style="@style/HenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/levels_title"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            android:id="@+id/coinTextView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="18dp">
+
+        <GridLayout
+            android:id="@+id/levelsGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:paddingTop="4dp"
+            android:useDefaultMargins="false" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:contentDescription="@string/action_back"
+            android:src="@drawable/back_button" />
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            style="@style/HenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/leaders_title"
+            android:textAllCaps="true"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="42dp"
+        android:paddingEnd="42dp">
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            android:id="@+id/weekTab"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab_selected"
+            android:gravity="center"
+            android:shadowColor="@color/transparent"
+            android:text="@string/leaders_week"
+            android:textColor="@color/hen_brown"
+            android:textSize="11sp" />
+
+        <threeway.henroute.orchard.core.ui.OutlinedTextView
+            android:id="@+id/allTimeTab"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab_unselected"
+            android:gravity="center"
+            android:text="@string/leaders_all_time"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <threeway.henroute.orchard.core.ui.OutlinedTextView
+        android:id="@+id/statsTextView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="13dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="13dp"
+        android:paddingBottom="18dp">
+
+        <LinearLayout
+            android:id="@+id/leadersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

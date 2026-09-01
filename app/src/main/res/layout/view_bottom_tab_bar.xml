@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomTabBar"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@drawable/bg_tab_bar"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <ImageView
+        android:id="@+id/tabLevelsButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/levels_title"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play_button" />
+
+    <ImageView
+        android:id="@+id/tabSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/settings_title"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/settings_button" />
+
+    <ImageView
+        android:id="@+id/tabLeadersButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/leaders_title"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/leaderboard_button" />
+
+    <ImageView
+        android:id="@+id/tabAchievementsButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/achievements_title"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/achievments_button" />
+
+    <ImageView
+        android:id="@+id/tabShopButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/shop_title"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shop_button" />
+</LinearLayout>

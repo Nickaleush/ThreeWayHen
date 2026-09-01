@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ThreeWayHen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hen_green</item>
+        <item name="colorPrimaryVariant">@color/hen_green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/hen_yellow</item>
+        <item name="colorOnSecondary">@color/hen_brown</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowBackground">@drawable/screen_common_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:fontFamily">@font/inter_18pt_black</item>
+        <item name="fontFamily">@font/inter_18pt_black</item>
+        <item name="android:textViewStyle">@style/HenTextView</item>
+        <item name="android:buttonStyle">@style/HenButton</item>
+        <item name="buttonStyle">@style/HenButton</item>
+    </style>
+
+    <style name="Theme.ThreeWayHen.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/hen_green</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.ThreeWayHen</item>
+    </style>
+</resources>

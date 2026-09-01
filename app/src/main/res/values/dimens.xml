@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="screen_padding">18dp</dimen>
+    <dimen name="level_button_margin">6dp</dimen>
+    <dimen name="result_panel_height">350dp</dimen>
+</resources>

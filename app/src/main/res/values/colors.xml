@@ -1,0 +1,15 @@
+<resources>
+    <color name="hen_green">#5D913F</color>
+    <color name="hen_green_dark">#39652F</color>
+    <color name="hen_yellow">#F4C34C</color>
+    <color name="hen_orange">#E99F35</color>
+    <color name="hen_cream">#FFF4C5</color>
+    <color name="hen_brown">#704229</color>
+    <color name="hen_red">#C65343</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="onboarding_text_fill">#FFD12A</color>
+    <color name="onboarding_text_outline">#8B3A14</color>
+</resources>
